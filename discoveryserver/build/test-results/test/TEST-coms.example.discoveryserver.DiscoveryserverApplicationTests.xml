@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="coms.example.discoveryserver.DiscoveryserverApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-03-03T14:59:04" hostname="sinms" time="0.388">
+  <properties/>
+  <testcase name="contextLoads()" classname="coms.example.discoveryserver.DiscoveryserverApplicationTests" time="0.388"/>
+  <system-out><![CDATA[23:59:02.733 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [coms.example.discoveryserver.DiscoveryserverApplicationTests]: DiscoveryserverApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+23:59:02.775 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration coms.example.discoveryserver.DiscoveryserverApplication for test class coms.example.discoveryserver.DiscoveryserverApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.9)
+
+2025-03-03T23:59:02.944+09:00  INFO 86172 --- [discoveryserver] [    Test worker] c.e.d.DiscoveryserverApplicationTests    : Starting DiscoveryserverApplicationTests using Java 17.0.8.1 with PID 86172 (started by sinsms in /Users/sinsms/Desktop/workspace/springcloud/discoveryserver)
+2025-03-03T23:59:02.945+09:00  INFO 86172 --- [discoveryserver] [    Test worker] c.e.d.DiscoveryserverApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-03-03T23:59:03.289+09:00  INFO 86172 --- [discoveryserver] [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=774f3927-649b-3faf-8c0d-3fb7f4fe1df9
+2025-03-03T23:59:03.433+09:00  INFO 86172 --- [discoveryserver] [    Test worker] o.s.v.b.OptionalValidatorFactoryBean     : Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2025-03-03T23:59:03.693+09:00  WARN 86172 --- [discoveryserver] [    Test worker] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-03-03T23:59:03.781+09:00  INFO 86172 --- [discoveryserver] [    Test worker] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-03-03T23:59:03.789+09:00  INFO 86172 --- [discoveryserver] [    Test worker] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-03-03T23:59:03.789+09:00  INFO 86172 --- [discoveryserver] [    Test worker] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2025-03-03T23:59:03.790+09:00  INFO 86172 --- [discoveryserver] [    Test worker] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1741013943790 with initial instances count: 0
+2025-03-03T23:59:03.806+09:00  INFO 86172 --- [discoveryserver] [    Test worker] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2025-03-03T23:59:03.806+09:00  INFO 86172 --- [discoveryserver] [    Test worker] c.n.eureka.cluster.PeerEurekaNodes       : Adding new peer nodes [http://localhost:8761/eureka/]
+2025-03-03T23:59:03.889+09:00  INFO 86172 --- [discoveryserver] [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2025-03-03T23:59:03.889+09:00  INFO 86172 --- [discoveryserver] [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2025-03-03T23:59:03.889+09:00  INFO 86172 --- [discoveryserver] [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2025-03-03T23:59:03.889+09:00  INFO 86172 --- [discoveryserver] [    Test worker] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2025-03-03T23:59:03.914+09:00  INFO 86172 --- [discoveryserver] [    Test worker] c.n.eureka.cluster.PeerEurekaNodes       : Replica node URL:  http://localhost:8761/eureka/
+2025-03-03T23:59:03.917+09:00  INFO 86172 --- [discoveryserver] [    Test worker] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2025-03-03T23:59:03.917+09:00  INFO 86172 --- [discoveryserver] [    Test worker] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2025-03-03T23:59:03.957+09:00  INFO 86172 --- [discoveryserver] [    Test worker] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint beneath base path '/actuator'
+2025-03-03T23:59:03.979+09:00  INFO 86172 --- [discoveryserver] [    Test worker] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application DISCOVERYSERVER with eureka with status UP
+2025-03-03T23:59:03.984+09:00  INFO 86172 --- [discoveryserver] [      Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2025-03-03T23:59:03.984+09:00  INFO 86172 --- [discoveryserver] [      Thread-12] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2025-03-03T23:59:03.984+09:00  INFO 86172 --- [discoveryserver] [      Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2025-03-03T23:59:03.984+09:00  INFO 86172 --- [discoveryserver] [      Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2025-03-03T23:59:03.984+09:00  INFO 86172 --- [discoveryserver] [      Thread-12] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2025-03-03T23:59:03.985+09:00  INFO 86172 --- [discoveryserver] [      Thread-12] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2025-03-03T23:59:03.991+09:00  INFO 86172 --- [discoveryserver] [    Test worker] c.e.d.DiscoveryserverApplicationTests    : Started DiscoveryserverApplicationTests in 1.166 seconds (process running for 1.629)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

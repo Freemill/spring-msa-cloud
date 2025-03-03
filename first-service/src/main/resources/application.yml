@@ -1,11 +1,16 @@
 spring:
   application:
-    name: first-service
+    name: my-first-service
 
 server:
-  port: 8081
+  port: 0
+#  port:
 
 eureka:
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+  instance: # port를 0으로 쓰면 여러개를 띄어도 아이디 하나에 하나밖에 안보임. 따라서 그걸 피하기 위해 이걸 설정
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}

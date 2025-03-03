@@ -18,9 +18,13 @@ public class UserController {
         return "It's Working in User Service";
     }
 
+//    @GetMapping("/welcome")
+//    public String welcome() {
+//        return env.getProperty("greeting.message");
+//    }
+
     @GetMapping("/welcome")
     public String welcome() {
-//        return env.getProperty("greeting.message");
         return greeting.getMessage();
     }
 }

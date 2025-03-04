@@ -17,6 +17,7 @@ public class WebSecurityConfig {
         return http.csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests((authz) -> authz
                         .requestMatchers(new AntPathRequestMatcher("/user-service/users/**", "POST")).permitAll()
+                        .requestMatchers(new AntPathRequestMatcher("/user-service/users/**", "GET")).permitAll()
                         .requestMatchers(new AntPathRequestMatcher("/user-service/health_check", "GET")).permitAll()
                 )
                 .headers((header) -> header.frameOptions((frameOption) -> frameOption.disable()))

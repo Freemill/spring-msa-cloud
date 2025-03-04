@@ -16,8 +16,8 @@ public class WebSecurityConfig {
     protected SecurityFilterChain configure(HttpSecurity http) throws Exception {
         return http.csrf(csrf -> csrf.disable())
                 .authorizeHttpRequests((authz) -> authz
-                        .requestMatchers(new AntPathRequestMatcher("/users/**", "POST")).permitAll()
-                        .requestMatchers(new AntPathRequestMatcher("/health_check", "GET")).permitAll()
+                        .requestMatchers(new AntPathRequestMatcher("/user-service/users/**", "POST")).permitAll()
+                        .requestMatchers(new AntPathRequestMatcher("/user-service/health_check", "GET")).permitAll()
                 )
                 .headers((header) -> header.frameOptions((frameOption) -> frameOption.disable()))
                 .build();

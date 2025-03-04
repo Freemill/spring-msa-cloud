@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: my-user-service
+    name: user-service
   h2:
     console:
       enabled: true
